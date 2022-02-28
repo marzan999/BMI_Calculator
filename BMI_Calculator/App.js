@@ -31,7 +31,7 @@ export default class App extends React.Component {
   render() {
     return (
       <ImageBackground
-        source={require("./assets/h.jpg")}
+        source={require("./assets/e.jpg")}
         style={{ width: "100%", height: "100%" }}
       >
         <View style={styles.container}>
@@ -41,10 +41,11 @@ export default class App extends React.Component {
               justifyContent: "center",
               alignSelf: "center",
               marginTop: 130,
-              fontSize: 35
+              fontSize: 25, 
+              fontWeight: "bold"
             }}
           >
-            BMI Calculator
+            BMI CALCULATOR
           </Text>
           <View style={styles.intro}>
             <TextInput
@@ -88,8 +89,9 @@ const styles = StyleSheet.create({
     // backgroundColor: "#f5fcff"
   },
   intro: {
-    flexDirection: "row"
+    flexDirection: "row", 
   },
+ 
   input: {
     height: 80,
     textAlign: "center",
@@ -105,8 +107,8 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     alignSelf: "center",
-    padding: 30,
-    fontSize: 25,
+    padding: 20,
+    fontSize: 20,
     color: "#FFCB1F",
     fontWeight: "bold"
   },
